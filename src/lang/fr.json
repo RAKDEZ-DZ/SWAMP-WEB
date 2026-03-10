@@ -1,0 +1,132 @@
+{
+  "Navbar": {
+    "home": "Accueil",
+    "about": "À propos",
+    "contact": "Contact"
+  },
+  "Footer": {
+    "Résidence Lina, Cité Adrar, 05000 Béjaïa, Algérie": "Résidence Lina, Cité Adrar, 06000 Béjaïa, Algérie",
+    "NCHRIHA": "NCHRIHA",
+    "getApp": "Obtenez l'application",
+    "App Store": "App Store",
+    "Google Play": "Google Play",
+    "text": "© {{year}} Conçu par <link>innovia algerie team</link>."
+  },
+  "Hero": {
+    "Nouvelle application disponible": "Nouvelle application disponible",
+    "NCHRIHA": "NCHRIHA",
+    "Achetez, vendez et louez tout ce que vous voulez, quand vous voulez,": "Achetez, vendez et louez tout ce que vous voulez, quand vous voulez,",
+    "où que vous soyez": "où que vous soyez",
+    "Téléchargez l'application maintenant": "Téléchargez l'application maintenant",
+    "App Store": "App Store",
+    "Google Play": "Google Play",
+    "Marketplace Innovant": "Marketplace Innovant",
+    "Une seule app, tous vos besoins": "Une seule app, tous vos besoins",
+    "Description": "C'est une application tout-en-un de petites annonces, créée par",
+    "Description suite": ", qui connecte particuliers et professionnels pour l'achat, la vente, la location ou la recherche d'emploi, le tout sur une seule plateforme simple et intuitive.",
+    "Achat/Vente": "Achat/Vente",
+    "Emploi": "Emploi",
+    "100% Sécurisé": "100% Sécurisé",
+    "Ultra Rapide": "Ultra Rapide",
+    "Interface Intuitive": "Interface Intuitive",
+    "Partout en Algérie": "Partout en Algérie"
+  },
+  "Features": {
+    "Votre Marketplace App": "Votre Marketplace App",
+    "Diverse Resources": "Diverse Resources",
+    "Description": "Achetez et vendez en toute simplicité, où que vous soyez. Que vous soyez dans les transports, en train d'attendre un ami ou que vous ayez juste quelques minutes devant vous, notre application s'intègre parfaitement à votre quotidien",
+    "Vendeurs Vérifiés": "Vendeurs Vérifiés",
+    "Vendeurs Vérifiés Description": "Faites confiance à une communauté fiable. Nos vendeurs sont vérifiés pour garantir des transactions sécurisées et une expérience sans stress.",
+    "Expérience Interactive": "Expérience Interactive",
+    "Expérience Interactive Description": "Discutez directement avec les acheteurs et vendeurs grâce à notre système de messagerie intégré. Négociez, posez vos questions et concluez vos affaires en toute transparence.",
+    "Suivi Personnalisé": "Suivi Personnalisé",
+    "Suivi Personnalisé Description": "Suivez vos annonces et vos ventes en temps réel. Recevez des notifications pour rester informé de chaque nouvelle opportunité.",
+    "Vitrines Professionnelles": "Vitrines Professionnelles",
+    "Vitrines Professionnelles Description": "Donnez de la visibilité à votre entreprise grâce à votre vitrine professionnelle personnalisée. Présentez vos produits, vos services et vos offres spéciales directement sur la marketplace pour toucher une audience ciblée et augmenter vos ventes.",
+    "Plus de 10,000 utilisateurs nous font confiance": "Plus de 10,000 utilisateurs nous font confiance"
+  },
+  "Carousel": {
+    "App Interfaces": "App Interfaces",
+    "Découvrez nos écrans dapplication": "Découvrez nos écrans d'application",
+    "interface": "Interface",
+    "screen": "Écran d'application mobile"
+  },
+  "faq": {
+    "title": "Questions fréquentes",
+    "subtitle": "Voici les réponses aux questions que les nouveaux utilisateurs se posent le plus souvent avant d’acheter ou vendre sur notre application",
+    "list": [
+      {
+        "title": "Comment commencer sur l’application ?",
+        "desc": "Il suffit de télécharger l’application, créer un compte gratuit et commencer à mettre en vente vos articles ou à parcourir les annonces disponibles."
+      },
+      {
+        "title": "L'application est-elle gratuite ?",
+        "desc": "À l’inscription, vous recevez 20 points offerts pour tester l’application et publier vos premières annonces. Une fois ces points utilisés, vous pouvez acheter des packs de points pour continuer à vendre ou accéder aux différentes fonctionnalités."
+      },
+      {
+        "title": "Comment mettre un article en vente ?",
+        "desc": "Prenez une photo de votre article, ajoutez une description, fixez un prix et publiez votre annonce en quelques secondes directement depuis votre téléphone."
+      },
+      {
+        "title": "Comment se passent les paiements ?",
+        "desc": "Les paiements sont sécurisés via notre système intégré. L’argent est transféré une fois la transaction confirmée, afin de protéger à la fois l’acheteur et le vendeur."
+      },
+      {
+        "title": "Puis-je supprimer ou modifier mon annonce ?",
+        "desc": "Oui, vous pouvez à tout moment modifier le prix, la description, ou supprimer votre annonce depuis votre espace personnel."
+      },
+      {
+        "title": "Que faire si j’ai un problème technique ?",
+        "desc": "Notre équipe support est disponible pour vous aider. Vous pouvez nous contacter directement via l’application (chat ou e-mail)."
+      }
+    ],
+    "ctaTitle": "Commencez dès aujourd’hui",
+    "ctaDesc": "Inscrivez-vous maintenant et bénéficiez de 20 points offerts pour publier vos premières annonces et découvrir toutes les fonctionnalités de notre marketplace.",
+    "appStore": "App Store",
+    "googlePlay": "Google Play"
+  },
+  "contact": {
+    "title": "Contactez-nous",
+    "subtitle": "Une question sur notre application ? Notre équipe d'experts vous accompagne dans votre transformation digitale !",
+    "methods": {
+      "email": {
+        "title": "Email",
+        "info": "contact@innovia-algerie.com"
+      },
+      "phone": {
+        "title": "Téléphone",
+        "info": "+33 605739875"
+      }
+    },
+    "form": {
+      "subject": {
+        "label": "Sujet",
+        "placeholder": "Sujet de votre message"
+      },
+      "message": {
+        "label": "Message",
+        "placeholder": "Décrivez votre demande en détail..."
+      },
+      "submit": "Envoyer",
+      "sending": "Envoi en cours...",
+      "success": "Message envoyé !"
+    }
+  },
+  "packs": {
+    "title": "Nos Packs",
+    "subtitle": "Choisissez le pack qui correspond à vos besoins et boostez votre visibilité",
+    "recommended": "Recommandé",
+    "reels": "reels",
+    "points": "points",
+    "vitrine": "vitrine pro",
+    "website": "site vitrine",
+    "duration": "{{count}} mois",
+    "price": "{{value}} DA",
+    "Recomander" : "Recomander",
+    "help": {
+      "title": "Besoin d'aide pour choisir ?",
+      "description": "Notre équipe est là pour vous accompagner dans le choix du pack le plus adapté à vos besoins",
+      "contact": "Contacter un conseiller"
+    }
+  }
+}
