@@ -3,11 +3,11 @@
 
 import React, { useEffect, useState } from "react";
 import { Navbar, Footer } from "@/components";
-import VideoIntro from "./video-intro";
-import Feature from "./feature";
-import Faqs from "./faqs";
+import VideoIntro from "@/components/video-intro";
+import Feature from "@/components/feature";
+import Faqs from "@/components/faqs";
 import { Loading3D } from "@/components/loading3D";
-import Hero from "./hero";
+import Hero from "@/components/hero";
 import Contact from "@/components/contact";
 import Carousel from "@/components/Carousel";
 import PricingSection from "@/components/pricings";
