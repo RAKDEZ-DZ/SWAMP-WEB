@@ -26,25 +26,25 @@ export function Footer() {
   return (
     <footer
       className="px-8 pt-44"
-      style={{ background: "linear-gradient(0deg, rgba(80,29,166,1) 0%, rgba(255,255,255,1) 100%)" }}
+      style={{ background: "linear-gradient(0deg, #159FD8 0%, rgba(255,255,255,1) 100%)" }}
       dir={i18n.language === "ar" ? "rtl" : "ltr"}
     >
       <div className="container mx-auto">
         <div className="flex flex-wrap justify-center gap-8 md:justify-between">
 
           <div className={`text-center ${i18n.language == "ar" ? " md:text-right" : " md:text-left"}`}>
-            <h5 className="text-lg md:text-2xl font-black text-white leading-tight">
+            <h5 className="text-lg md:text-2xl font-black text-white leading-tight mt-3">
               <Image
-                src="/logo_remove.png"
+                src="/logo.png"
                 alt="logo_remove footer"
-                width={70}
-                height={70}
-                className="inline-block rounded rounded-3"
+                width={40}
+                height={40}
+                className="inline-block rounded rounded-3 mb-3"
                 loading="lazy"
               />
               {t('Footer.NCHRIHA')}
             </h5>
-            <div className="flex items-center gap-3 mb-12">
+            <div className="flex items-center gap-3 mb-5">
               <MapPinIcon className="w-6 h-6 text-white" />
               <Typography color="white" className="font-normal">
                 {t('Footer.Résidence Lina, Cité Adrar, 05000 Béjaïa, Algérie')}
@@ -67,13 +67,16 @@ export function Footer() {
             </ul>
           </div>
 
-          <div className="mt-8 w-full md:mt-0 md:w-auto">
-            <Typography variant="h6" color="white" className="mb-3">
+          <div className="mt-4 w-full md:mt-0 md:w-auto">
+            <Typography variant="h6" color="white" className="mb-3 flex items-center justify-center">
               {t('Footer.getApp')}
             </Typography>
             <div className="flex flex-col gap-2">
-              <Button aria-label="App Store"
-                color="white" className="flex items-center justify-center">
+              <Button 
+                aria-label="App Store"
+                className="flex items-center justify-center"
+                style={{ backgroundColor: "#fff", color: "black" }}
+              >
                 <Image
                   width={256}
                   height={256}
@@ -84,7 +87,11 @@ export function Footer() {
                 />
                 {t('Footer.App Store')}
               </Button>
-              <Button color="white" aria-label="App Store" className="flex items-center justify-center">
+              <Button 
+                aria-label="Google Play" 
+                className="flex items-center justify-center"
+                style={{ backgroundColor: "#fff", color: "black" }}
+              >
                 <Image
                   width={256}
                   height={256}
@@ -100,7 +107,7 @@ export function Footer() {
 
         </div>
 
-        <div className="mt-6 flex flex-wrap items-center justify-center gap-y-4 gap-x-8 border-t border-gray-700 py-4 md:justify-between">
+        <div className="mt-6 flex flex-wrap items-center justify-center gap-y-4 gap-x-8 border-t border-white/30 py-4 md:justify-between">
            <Typography color="white" className="text-center font-bold opacity-75">
           <Trans
             i18nKey="Footer.text"
@@ -111,6 +118,7 @@ export function Footer() {
                   href="https://innovia-algerie.com"
                   target="_blank"
                   className="underline"
+                  style={{ color: "#28A9DF" }}
                 />
               ),
             }}
@@ -118,18 +126,27 @@ export function Footer() {
         </Typography>
 
         <div className="flex gap-2">
-          <IconButton variant="text" color="white"
+          <IconButton 
+            variant="text" 
+            color="white"
             onClick={() => window.open("https://www.tiktok.com/@nchriha_by_innovia", "_blank")}
+            className="hover:bg-[#28A9DF]/20"
           >
             <i className="fa-brands fa-tiktok text-2xl opacity-75"></i>
           </IconButton>
-          <IconButton variant="text" color="white"
+          <IconButton 
+            variant="text" 
+            color="white"
             onClick={() => window.open("https://www.facebook.com/share/175RmdCeS4/", "_blank")}
+            className="hover:bg-[#159FD8]/20"
           >
             <i className="fa-brands fa-facebook text-2xl opacity-75"></i>
           </IconButton>
-          <IconButton variant="text" color="white"
+          <IconButton 
+            variant="text" 
+            color="white"
             onClick={() => window.open("https://www.instagram.com/nchriha_by_innovia_algerie", "_blank")}
+            className="hover:bg-[#28A9DF]/20"
           >
             <i className="fa-brands fa-instagram text-2xl opacity-75"></i>
           </IconButton>

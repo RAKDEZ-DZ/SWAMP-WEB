@@ -1,4 +1,3 @@
-
 "use client";
 import { Canvas, useFrame } from "@react-three/fiber";
 import { OrbitControls, useGLTF, useTexture, Html } from "@react-three/drei";
@@ -91,8 +90,8 @@ function PhonesScene() {
       <ambientLight intensity={0.4} />
       <directionalLight position={[5, 5, 5]} intensity={1.2} castShadow />
       <directionalLight position={[-3, 3, 2]} intensity={0.8} />
-      <pointLight position={[0, 3, 2]} intensity={0.6} color="#6366f1" />
-      <pointLight position={[2, -2, 3]} intensity={0.4} color="#8b5cf6" />
+      <pointLight position={[0, 3, 2]} intensity={0.6} color="#159FD8" />
+      <pointLight position={[2, -2, 3]} intensity={0.4} color="#28A9DF" />
 
       <Suspense fallback={
         <Html center>
@@ -200,11 +199,11 @@ export default function Hero() {
       id="home" 
       dir={isRTL ? "rtl" : "ltr"}
     >
-      {/* Arrière-plan avec gradient moderne */}
+      {/* Arrière-plan avec gradient moderne utilisant les nouvelles couleurs */}
       <div
-        className="absolute inset-0 bg-gradient-to-br from-purple-900 via-purple-800 to-indigo-900"
+        className="absolute inset-0"
         style={{
-          background: "linear-gradient(0deg, rgba(255,255,255,1) 0%, rgba(80,29,166,1) 86%)",
+          background: "linear-gradient(0deg, rgba(255,255,255,1) 0%, #159FD8 86%)",
         }}
       />
 
@@ -288,7 +287,7 @@ export default function Hero() {
             {/* Contenu texte */}
             <div className={`space-y-6 `}>
               <div className="space-y-4">
-                <div className={`inline-flex items-center px-3 py-1 bg-purple-100 text-purple-800 rounded-full text-sm font-medium ${isRTL ? 'flex-row-reverse font-arabic' : ''}`}>
+                <div className={`inline-flex items-center px-3 py-1 bg-blue-100 text-blue-800 rounded-full text-sm font-medium ${isRTL ? 'flex-row-reverse font-arabic' : ''}`} style={{ backgroundColor: "#159FD8", color: "white" }}>
                   <span className={isRTL ? 'ml-1' : 'mr-1'}>🚀</span>
                   {t('Hero.Marketplace Innovant') || 'Marketplace Innovant'}
                 </div>
@@ -297,6 +296,7 @@ export default function Hero() {
                   variant="h3"
                   color="blue-gray"
                   className={`text-2xl sm:text-3xl lg:text-4xl font-bold ${getAlignmentClasses(true)} ${isRTL ? 'font-arabic' : ''}`}
+                  style={{ color: "#159FD8" }}
                 >
                   {t('Hero.Une seule app, tous vos besoins') || 'Une seule app, tous vos besoins'}
                 </Typography>
@@ -311,7 +311,8 @@ export default function Hero() {
                   href="https://innovia-algerie.com"
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="text-purple-600 hover:text-purple-800 font-semibold hover:underline transition-colors"
+                  className="font-semibold hover:underline transition-colors"
+                  style={{ color: "#159FD8" }}
                 >
                   Innovia Algérie
                 </a>
@@ -327,9 +328,9 @@ export default function Hero() {
                   { icon: '📱', text: t('Hero.Interface Intuitive') || 'Interface Intuitive' },
                   { icon: '🌍', text: t('Hero.Partout en Algérie') || 'Partout en Algérie' }
                 ].map((feature, index) => (
-                  <div key={index} className={`flex items-center p-3 bg-gray-50 rounded-xl hover:bg-purple-50 transition-colors gap-3`}>
-                    <span className="text-xl">{feature.icon}</span>
-                    <span className={`text-sm font-medium text-gray-700 ${isRTL ? 'font-arabic' : ''}`} >{feature.text}</span>
+                  <div key={index} className={`flex items-center p-3 rounded-xl transition-colors gap-3`} style={{ backgroundColor: index % 2 === 0 ? '#159FD8' : '#28A9DF', color: 'white' }}>
+                    <span className="text-xl text-white">{feature.icon}</span>
+                    <span className={`text-sm font-medium text-white ${isRTL ? 'font-arabic' : ''}`}>{feature.text}</span>
                   </div>
                 ))}
               </div>
@@ -338,7 +339,7 @@ export default function Hero() {
             {/* Visuel/GIF */}
             <div className={`flex justify-center ${isRTL ? 'lg:order-1' : 'lg:order-2'}`}>
               <div className="relative group">
-                <div className="absolute -inset-4 bg-gradient-to-r from-purple-600 to-pink-600 rounded-2xl blur opacity-25 group-hover:opacity-40 transition duration-1000 group-hover:duration-200"></div>
+                <div className="absolute -inset-4 rounded-2xl blur opacity-25 group-hover:opacity-40 transition duration-1000 group-hover:duration-200" style={{ background: "linear-gradient(to right, #159FD8, #28A9DF)" }}></div>
                 <div className="relative">
                   <Image
                     src="/sale_cons.gif"

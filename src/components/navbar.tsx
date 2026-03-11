@@ -1,10 +1,9 @@
-import React, { lazy, useEffect, useRef, useState } from "react";
+import React, { useEffect, useRef, useState } from "react";
 import {
   Navbar as MTNavbar,
   Collapse,
   IconButton,
   Typography,
-  Button,
 } from "@material-tailwind/react";
 import { Bars3Icon, XMarkIcon } from "@heroicons/react/24/outline";
 import Image from "next/image";
@@ -112,7 +111,7 @@ export function Navbar() {
       shadow={false}
       blurred={false}
       className="fixed top-0 z-50 border-0"
-      style={{ backgroundColor: isScrolling ? "rgba(255,255,255,0.9)" : "#501da6" }}
+      style={{ backgroundColor: isScrolling ? "rgba(255,255,255,0.9)" : "#159FD8" }}
     >
       <div className="container mx-auto flex items-center justify-between">
         <Image
@@ -120,7 +119,7 @@ export function Navbar() {
           alt="logo"
           width={40}
           height={40}
-          className="inline-block rounded rounded-3"
+          className="inline-block rounded rounded-3 bg-light p-3"
           loading="lazy"
         />
         <ul
@@ -166,7 +165,7 @@ export function Navbar() {
                 padding: 10,
                 borderRadius: 8,
                 border: "1px solid #fff",
-                backgroundColor: "rgba(30, 61, 88, 0.1)",
+                backgroundColor: "#28A9DF",
                 display: "flex",
                 alignItems: "center",
                 gap: 10,
@@ -248,7 +247,7 @@ export function Navbar() {
                   padding: 10,
                   borderRadius: 8,
                   border: "1px solid #fff",
-                  backgroundColor: "rgba(30, 61, 88, 0.1)",
+                  backgroundColor: "#28A9DF",
                   display: "flex",
                   alignItems: "center",
                   gap: 10,
@@ -294,7 +293,8 @@ export function Navbar() {
                         gap: 10,
                         cursor: "pointer",
                         color: "black",
-                        backgroundColor: selected.code === code ? "#eee" : "transparent",
+                        backgroundColor: selected.code === code ? "#159FD8" : "transparent",
+                        color: selected.code === code ? "white" : "black",
                       }}
                     >
                       <img src={flag} alt={label} style={{ width: 24, height: 16, objectFit: "cover" }} loading="lazy" />
