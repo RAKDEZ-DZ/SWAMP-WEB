@@ -47,9 +47,7 @@
   },
   "Carousel": {
     "App Interfaces": "App Interfaces",
-    "Découvrez nos écrans dapplication": "Découvrez nos écrans d'application",
-    "interface": "Interface",
-    "screen": "Écran d'application mobile"
+    "Découvrez nos écrans dapplication": "Découvrez nos écrans d'application"
   },
   "faq": {
     "title": "Questions fréquentes",
@@ -114,19 +112,24 @@
   },
   "packs": {
     "title": "Nos Packs",
-    "subtitle": "Choisissez le pack qui correspond à vos besoins et boostez votre visibilité",
+    "subtitle": "Choisissez le pack qui correspond à vos besoins",
     "recommended": "Recommandé",
-    "reels": "reels",
-    "points": "points",
-    "vitrine": "vitrine pro",
-    "website": "site vitrine",
     "duration": "{{count}} mois",
     "price": "{{value}} DA",
-    "Recomander" : "Recomander",
+    "currency": "DA",
     "help": {
       "title": "Besoin d'aide pour choisir ?",
       "description": "Notre équipe est là pour vous accompagner dans le choix du pack le plus adapté à vos besoins",
       "contact": "Contacter un conseiller"
+    },
+    "features": {
+      "allAccess": "Accès à toutes les fonctionnalités",
+      "prioritySupport": "Support prioritaire 24/7",
+      "enhancedSecurity": "Sécurité renforcée",
+      "unlimitedUsage": "Utilisation non limitée",
+      "duration": "Durée: {{duration}} mois",
+      "autoBackup": "Sauvegarde automatique",
+      "freeUpdates": "Mises à jour incluses"
     }
   }
 }

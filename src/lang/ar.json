@@ -47,9 +47,7 @@
   },
   "Carousel": {
     "App Interfaces": "واجهات التطبيق",
-    "Découvrez nos écrans dapplication": "اكتشف شاشات التطبيق لدينا",
-    "interface": "واجهة",
-    "screen": "شاشة تطبيق الهاتف المحمول"
+    "Découvrez nos écrans dapplication": "اكتشف شاشات التطبيق لدينا"
   },
   "faq": {
     "title": "الأسئلة الشائعة",
@@ -114,19 +112,24 @@
   },
   "packs": {
     "title": "باقاتنا",
-    "subtitle": "اختر الباقة التي تناسب احتياجاتك وزد من ظهورك",
+    "subtitle": "اختر الباقة التي تناسب احتياجاتك ",
     "recommended": "موصى به",
-    "reels": "ريلز",
-    "points": "نقاط",
-    "vitrine": "متجر احترافي",
-    "website": "موقع ويب",
     "duration": "{{count}} شهر",
     "price": "{{value}} دج",
-    "Recomander" : "موصى به",
+    "currency": "دج",
     "help": {
       "title": "هل تحتاج مساعدة في الاختيار؟",
       "description": "فريقنا هنا لمساعدتك في اختيار الباقة الأنسب لاحتياجاتك",
       "contact": "اتصل بمستشار"
+    },
+    "features": {
+      "allAccess": "الوصول إلى جميع الميزات",
+      "prioritySupport": "دعم ذو أولوية 24/7",
+      "enhancedSecurity": "أمان معزز",
+      "unlimitedUsage": "استخدام غير محدود",
+      "duration": "المدة: {{duration}} أشهر",
+      "autoBackup": "نسخ احتياطي تلقائي",
+      "freeUpdates": "تحديثات مجانية"
     }
   }
 }
