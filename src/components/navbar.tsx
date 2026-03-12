@@ -114,14 +114,16 @@ export function Navbar() {
       style={{ backgroundColor: isScrolling ? "rgba(255,255,255,0.9)" : "#159FD8" }}
     >
       <div className="container mx-auto flex items-center justify-between">
-        <Image
-          src="/logo.png"
-          alt="logo"
-          width={40}
-          height={40}
-          className="inline-block rounded rounded-3 bg-light p-3"
-          loading="lazy"
-        />
+        <div className="bg-white rounded-lg px-2 ">
+          <Image
+            src="/logo.png"
+            alt="logo"
+            width={40}
+            height={40}
+            className="object-contain"
+            loading="lazy"
+          />
+        </div>
         <ul
           className={`ml-10 hidden items-center gap-6 lg:flex ${isScrolling ? "text-gray-900" : "text-white"
             }`}
@@ -174,7 +176,7 @@ export function Navbar() {
                 color: "white"
               }}
             >
-              <img src={selected.flag} alt={selected.label} style={{ width: 24, height: 16, objectFit: "cover" }} loading="lazy"/>
+              <img src={selected.flag} alt={selected.label} style={{ width: 24, height: 16, objectFit: "cover" }} loading="lazy" />
               {selected.label}
               <span style={{ marginLeft: "auto" }}>▼</span>
             </button>

@@ -6,7 +6,6 @@ import Image from "next/image";
 import { Button, Typography } from "@material-tailwind/react";
 import { useTranslation } from "react-i18next";
 
-// Composant téléphone animé optimisé
 function AnimatedPhoneModel({
   modelPath,
   texturePath,
@@ -152,7 +151,7 @@ function DownloadButtons() {
           className="w-6 h-6"
           loading="lazy"
         />
-        <span className="text-sm font-semibold mt-1">{t('Hero.App Store') || 'App Store'}</span>
+        <span className="text-sm font-semibold mt-1">{t('Hero.App Store')}</span>
       </Button>
 
       <Button
@@ -168,7 +167,7 @@ function DownloadButtons() {
           className="w-6 h-6"
           loading="lazy"
         />
-        <span className="text-sm font-semibold mt-1">{t('Hero.Google Play') || 'Google Play'}</span>
+        <span className="text-sm font-semibold mt-1">{t('Hero.Google Play')}</span>
       </Button>
     </div>
   );
@@ -178,7 +177,6 @@ export default function Hero() {
   const { t, i18n } = useTranslation();
   const isRTL = i18n.language === "ar";
 
-  // Classes conditionnelles pour RTL/LTR
   const getAlignmentClasses = (centerOnMobile: boolean = true) => {
     const base = centerOnMobile ? "text-center" : "";
     const desktop = isRTL ? "lg:text-right" : "lg:text-left";
@@ -232,17 +230,16 @@ export default function Hero() {
               {/* Badge/Tag */}
               <div className={`inline-flex items-center px-4 py-2 bg-white/10 backdrop-blur-sm rounded-full text-white text-sm border border-white/20 ${isRTL ? 'flex-row-reverse' : ''}`}>
                 <span className={`w-2 h-2 bg-green-400 rounded-full animate-pulse ${isRTL ? 'ml-2' : 'mr-2'}`}></span>
-                {t('Hero.Nouvelle application disponible') || 'Nouvelle application disponible'}
+                {t('Hero.Nouvelle application disponible')}
               </div>
 
-              {/* Titre principal */}
               <div className="space-y-4">
                 <Typography
                   variant="h1"
                   color="white"
                   className={`text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-bold leading-tight ${isRTL ? 'font-arabic' : ''}`}
                 >
-                  {t('Hero.NCHRIHA') || 'NCHRIHA'}
+                  SWAMP
                 </Typography>
                 <div className={`h-1 w-24 bg-gradient-to-r from-yellow-400 to-orange-500 rounded-full ${getMarginClasses()}`}></div>
               </div>
@@ -252,16 +249,16 @@ export default function Hero() {
                 variant="lead"
                 className={`text-lg sm:text-xl lg:text-2xl text-gray-100 leading-relaxed max-w-2xl ${getMarginClasses()} ${isRTL ? 'font-arabic' : ''}`}
               >
-                {t('Hero.Achetez, vendez et louez tout ce que vous voulez, quand vous voulez,') || 'Achetez, vendez et louez tout ce que vous voulez, quand vous voulez,'}
+                {t('Hero.description')}
                 <span className="text-yellow-300 font-semibold">
-                  {' '}{t('Hero.où que vous soyez') || 'où que vous soyez'}
+                  ,{' '}{t('Hero.slogan')}
                 </span>.
               </Typography>
 
               {/* Call to action */}
               <div className="space-y-4">
                 <Typography className={`text-white/90 font-medium ${isRTL ? 'font-arabic' : ''}`}>
-                  {t('Hero.Téléchargez l\'application maintenant') || 'Téléchargez l\'application maintenant'}
+                  {t('Hero.Téléchargez l\'application maintenant')}
                 </Typography>
                 <div className={`flex flex-col sm:flex-row gap-4`}  >
                   <DownloadButtons />
@@ -289,7 +286,7 @@ export default function Hero() {
               <div className="space-y-4">
                 <div className={`inline-flex items-center px-3 py-1 bg-blue-100 text-blue-800 rounded-full text-sm font-medium ${isRTL ? 'flex-row-reverse font-arabic' : ''}`} style={{ backgroundColor: "#159FD8", color: "white" }}>
                   <span className={isRTL ? 'ml-1' : 'mr-1'}>🚀</span>
-                  {t('Hero.Marketplace Innovant') || 'Marketplace Innovant'}
+                  {t('Hero.Smart Management')}
                 </div>
 
                 <Typography
@@ -298,7 +295,7 @@ export default function Hero() {
                   className={`text-2xl sm:text-3xl lg:text-4xl font-bold ${getAlignmentClasses(true)} ${isRTL ? 'font-arabic' : ''}`}
                   style={{ color: "#159FD8" }}
                 >
-                  {t('Hero.Une seule app, tous vos besoins') || 'Une seule app, tous vos besoins'}
+                  {t('Hero.Une seule app, tous vos besoins') }
                 </Typography>
               </div>
 
@@ -306,22 +303,12 @@ export default function Hero() {
                 variant="paragraph"
                 className={`text-gray-600 text-base lg:text-lg leading-relaxed ${getAlignmentClasses(false)} ${isRTL ? 'font-arabic text-right' : 'text-justify'}`}
               >
-                {t('Hero.Description') || "C'est une application tout-en-un de petites annonces, créée par"}{" "}
-                <a
-                  href="https://innovia-algerie.com"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="font-semibold hover:underline transition-colors"
-                  style={{ color: "#159FD8" }}
-                >
-                  Innovia Algérie
-                </a>
-                {t('Hero.Description suite') || ", qui connecte particuliers et professionnels pour l'achat, la vente, la location ou la recherche d'emploi, le tout sur une seule plateforme simple et intuitive."}
+                {t('Hero.Apropos')}         
               </Typography>
 
               <div className="grid grid-cols-2 gap-4 pt-1" >
                 {[
-                  { icon: '💰', text: t('Hero.Achat/Vente') || "Achat/Vente" },
+                  { icon: '💰', text: t('Hero.Achat/Vente') },
                   { icon: '💼', text: t('Hero.Emploi') || 'Emploi' },
                   { icon: '🔐', text: t('Hero.100% Sécurisé') || '100% Sécurisé' },
                   { icon: '⚡', text: t('Hero.Ultra Rapide') || 'Ultra Rapide' },
