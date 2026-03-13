@@ -135,7 +135,7 @@ function PhonesScene() {
 // Composant pour les boutons de téléchargement
 function DownloadButtons() {
   const { t } = useTranslation();
-  
+
   return (
     <div className="flex flex-col sm:flex-row gap-4 justify-center lg:justify-start" >
       <Button
@@ -192,9 +192,9 @@ export default function Hero() {
   };
 
   return (
-    <div 
-      className="relative min-h-screen w-full overflow-hidden" 
-      id="home" 
+    <div
+      className="relative min-h-screen w-full overflow-hidden"
+      id="home"
       dir={isRTL ? "rtl" : "ltr"}
     >
       {/* Arrière-plan avec gradient moderne utilisant les nouvelles couleurs */}
@@ -284,18 +284,13 @@ export default function Hero() {
             {/* Contenu texte */}
             <div className={`space-y-6 `}>
               <div className="space-y-4">
-                <div className={`inline-flex items-center px-3 py-1 bg-blue-100 text-blue-800 rounded-full text-sm font-medium ${isRTL ? 'flex-row-reverse font-arabic' : ''}`} style={{ backgroundColor: "#159FD8", color: "white" }}>
-                  <span className={isRTL ? 'ml-1' : 'mr-1'}>🚀</span>
-                  {t('Hero.Smart Management')}
-                </div>
-
                 <Typography
                   variant="h3"
                   color="blue-gray"
                   className={`text-2xl sm:text-3xl lg:text-4xl font-bold ${getAlignmentClasses(true)} ${isRTL ? 'font-arabic' : ''}`}
                   style={{ color: "#159FD8" }}
                 >
-                  {t('Hero.Une seule app, tous vos besoins') }
+                  {t('Hero.Une seule app, tous vos besoins')}
                 </Typography>
               </div>
 
@@ -303,17 +298,17 @@ export default function Hero() {
                 variant="paragraph"
                 className={`text-gray-600 text-base lg:text-lg leading-relaxed ${getAlignmentClasses(false)} ${isRTL ? 'font-arabic text-right' : 'text-justify'}`}
               >
-                {t('Hero.Apropos')}         
+                {t('Hero.Apropos')}
               </Typography>
 
               <div className="grid grid-cols-2 gap-4 pt-1" >
                 {[
-                  { icon: '💰', text: t('Hero.Achat/Vente') },
-                  { icon: '💼', text: t('Hero.Emploi') || 'Emploi' },
-                  { icon: '🔐', text: t('Hero.100% Sécurisé') || '100% Sécurisé' },
-                  { icon: '⚡', text: t('Hero.Ultra Rapide') || 'Ultra Rapide' },
-                  { icon: '📱', text: t('Hero.Interface Intuitive') || 'Interface Intuitive' },
-                  { icon: '🌍', text: t('Hero.Partout en Algérie') || 'Partout en Algérie' }
+                  { icon: '📈', text: t('Hero.Suivi et historiques de Consommation') },
+                  { icon: '⚡', text: t('Hero.Statistiques Temps Réel') },
+                  { icon: '🔐', text: t('Hero.100% Sécurisé') },
+                  { icon: '🔔', text: t('Hero.Système Alertes Temps Réel') },
+                  { icon: '📱', text: t('Hero.Interface Intuitive') + ' & ' + t('Hero.Ultra Rapide') },
+                  { icon: '🌍', text: t('Hero.Partout en Algérie') }
                 ].map((feature, index) => (
                   <div key={index} className={`flex items-center p-3 rounded-xl transition-colors gap-3`} style={{ backgroundColor: index % 2 === 0 ? '#159FD8' : '#28A9DF', color: 'white' }}>
                     <span className="text-xl text-white">{feature.icon}</span>
@@ -323,20 +318,27 @@ export default function Hero() {
               </div>
             </div>
 
-            {/* Visuel/GIF */}
             <div className={`flex justify-center ${isRTL ? 'lg:order-1' : 'lg:order-2'}`}>
               <div className="relative group">
-                <div className="absolute -inset-4 rounded-2xl blur opacity-25 group-hover:opacity-40 transition duration-1000 group-hover:duration-200" style={{ background: "linear-gradient(to right, #159FD8, #28A9DF)" }}></div>
-                <div className="relative">
-                  <Image
-                    src="/sale_cons.gif"
-                    alt="App Preview"
-                    className="w-48 sm:w-56 lg:w-64 object-contain rounded-2xl shadow-2xl"
-                    width={400}
-                    height={400}
-                    loading="lazy"
-                  />
+
+                <div className="absolute -top-4 left-1/2 -translate-x-1/2">
+                  <div
+                    className={`inline-flex items-center px-3 py-1 rounded-full text-sm font-medium ${isRTL ? "flex-row-reverse font-arabic" : ""}`}
+                    style={{ backgroundColor: "#159FD8", color: "white" }}>
+                    <span className={isRTL ? "ml-1" : "mr-1"}>🚀</span>
+                    {t("Hero.Smart Management")}
+                  </div>
                 </div>
+
+                <Image
+                  src="/imageAcceuille.png"
+                  alt="App Preview"
+                  className="object-contain rounded-2xl shadow-[0_0_40px_rgba(21,159,216,0.7)]"
+                  width={500}
+                  height={500}
+                  loading="lazy"
+                />
+
               </div>
             </div>
 
