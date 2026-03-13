@@ -11,9 +11,8 @@ const roboto = Roboto({
 });
 
 export const metadata: Metadata = {
-  title: "NCHRIHA",
-  description:
-    "Achetez, vendez et louer tout ce que vous voulez, quand vous voulez, où que vous soyez.",
+  title: "SWAMP",
+  description: "Application de suivi de consommation (Hydrolique) en temps réel",
 };
 
 export default function RootLayout({

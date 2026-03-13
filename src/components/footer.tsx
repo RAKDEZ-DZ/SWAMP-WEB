@@ -42,7 +42,7 @@ export function Footer() {
                 className="inline-block rounded rounded-3 mb-3"
                 loading="lazy"
               />
-              {t('Footer.NCHRIHA')}
+              SWAMP
             </h5>
             <div className="flex items-center gap-3 mb-5">
               <MapPinIcon className="w-6 h-6 text-white" />
