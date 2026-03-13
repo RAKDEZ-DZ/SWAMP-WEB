@@ -1,6 +1,6 @@
 'use client'
 import { useEffect } from 'react'
-export default function page() {
+export default function Page() {
     useEffect(() => { window.location.href = 'swamp://'}, [])
   return (
     <div></div>
