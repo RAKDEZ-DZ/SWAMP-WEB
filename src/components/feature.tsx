@@ -74,8 +74,8 @@ export function Features() {
       {/* Background bubbles */}
       <div className="absolute inset-0 pointer-events-none">
 
-        <div className="absolute top-32 left-10 w-10 h-10 bg-gradient-to-br from-purple-600 via-blue-600 to-indigo-800 rounded-full animate-bounce opacity-20"></div>
-        <div className="absolute top-32 right-10 w-10 h-10 bg-gradient-to-br from-purple-600 via-blue-600 to-indigo-800 rounded-full animate-bounce opacity-20"></div>
+        <div className="absolute top-32 left-10 w-10 h-10 bg-gradient-to-br from-blue-500 via-cyan-400 to-blue-600 rounded-full animate-bounce opacity-20"></div>
+        <div className="absolute top-32 right-10 w-10 h-10 bg-gradient-to-br from-blue-500 via-cyan-400 to-blue-600 rounded-full animate-bounce opacity-20"></div>
       </div>
 
       <div className="container mx-auto mb-20 text-center relative z-10">

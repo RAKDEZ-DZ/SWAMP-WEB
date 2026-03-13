@@ -53,31 +53,31 @@
     "list": [
       {
         "title": "Comment commencer sur l’application ?",
-        "desc": "Il suffit de télécharger l’application, créer un compte gratuit et commencer à mettre en vente vos articles ou à parcourir les annonces disponibles."
+        "desc": "Il suffit de télécharger l’application, créer un compte gratuit et commencer à découvrir toutes les fonctionnalités."
       },
       {
         "title": "L'application est-elle gratuite ?",
-        "desc": "À l’inscription, vous recevez 20 points offerts pour tester l’application et publier vos premières annonces. Une fois ces points utilisés, vous pouvez acheter des packs de points pour continuer à vendre ou accéder aux différentes fonctionnalités."
+        "desc": "À l'inscription, vous profitez de 7 jours gratuits. Après cette période, choisissez un abonnement ou restez en mode gratuit avec des fonctionnalités de base."
       },
       {
-        "title": "Comment mettre un article en vente ?",
-        "desc": "Prenez une photo de votre article, ajoutez une description, fixez un prix et publiez votre annonce en quelques secondes directement depuis votre téléphone."
+        "title": "Comment créer une citerne ?",
+        "desc": "Après votre inscription, accédez à l'interface de création, entrez les informations de votre citerne et commencez à suivre sa consommation en temps réel."
+      },
+      {
+        "title": "Que puis-je suivre sur mes citernes ?",
+        "desc": "Vous pouvez consulter et surveiller la consommation journalière, recevoir des alertes en temps réel basées sur vos paramètres personnalisés."
       },
       {
         "title": "Comment se passent les paiements ?",
-        "desc": "Les paiements sont sécurisés via notre système intégré. L’argent est transféré une fois la transaction confirmée, afin de protéger à la fois l’acheteur et le vendeur."
-      },
-      {
-        "title": "Puis-je supprimer ou modifier mon annonce ?",
-        "desc": "Oui, vous pouvez à tout moment modifier le prix, la description, ou supprimer votre annonce depuis votre espace personnel."
+        "desc": "Les paiements des abonnements sont sécurisés et automatisés. Vous pouvez payer via l'application direct en ligne, avec facture téléchargeable."
       },
       {
         "title": "Que faire si j’ai un problème technique ?",
-        "desc": "Notre équipe support est disponible pour vous aider. Vous pouvez nous contacter directement via l’application (chat ou e-mail)."
+        "desc": "Notre équipe support est disponible pour vous aider. Vous pouvez nous contacter directement via l’application."
       }
     ],
     "ctaTitle": "Commencez dès aujourd’hui",
-    "ctaDesc": "Inscrivez-vous maintenant et bénéficiez de 20 points offerts pour publier vos premières annonces et découvrir toutes les fonctionnalités de notre marketplace.",
+    "ctaDesc": "Inscrivez-vous dès maintenant et bénéficiez de 7 jours d'essai gratuit pour gérer vos citernes, surveiller votre consommation et recevoir des alertes personnalisées.",
     "appStore": "App Store",
     "googlePlay": "Google Play"
   },

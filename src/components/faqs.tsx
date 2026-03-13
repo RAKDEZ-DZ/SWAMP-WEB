@@ -27,9 +27,9 @@ export function Faqs() {
           </h2>
 
           <Typography
-          variant="lead" className="mx-auto w-full px-4 !text-gray-500 lg:w-11/12 lg:px-8 ">
-          {t("faq.subtitle")}
-        </Typography>
+            variant="lead" className="mx-auto w-full px-4 !text-gray-500 lg:w-11/12 lg:px-8 ">
+            {t("faq.subtitle")}
+          </Typography>
         </div>
 
         <div className="grid gap-20 md:grid-cols-1 lg:grid-cols-3">
@@ -46,12 +46,12 @@ export function Faqs() {
         </div>
       </div>
 
-      <section className="px-8 py-16 bg-gradient-to-r from-blue-500 to-indigo-600 text-white rounded-3xl mt-16">
+      <section className="px-8 py-16 bg-gradient-to-r from-gray-900 to-gray-600 text-white rounded-3xl mt-16">
         <div className="container max-w-5xl mx-auto text-center">
-          <h2 className="text-2xl sm:text-3xl md:text-6xl font-black text-dark leading-tight mb-6" >
+          <h2 className="text-2xl sm:text-3xl md:text-6xl font-black text-blue-600 leading-tight mb-6">
             {t("faq.ctaTitle")}
           </h2>
-          <p className="text-lg md:text-xl mb-8">{t("faq.ctaDesc")}</p>
+          <p className="text-lg md:text-xl text-blue-500 mb-8">{t("faq.ctaDesc")}</p>
           <div className={`flex flex-col sm:flex-row gap-4 justify-center ${lang === "ar" ? "flex-row-reverse" : ""}`}>
             <Button
               size="lg"
