@@ -138,7 +138,7 @@ export function Navbar() {
             variant="text"
             color={isScrolling ? "gray" : "white"}
             size="sm"
-            onClick={() => window.open("https://www.tiktok.com/@nchriha_by_innovia", "_blank")}
+            onClick={() => window.open("https://korichi-abderraouf.netlify.app/", "_blank")}
           >
             <i className="fa-brands fa-tiktok text-base" />
           </IconButton>
@@ -146,7 +146,7 @@ export function Navbar() {
             variant="text"
             color={isScrolling ? "gray" : "white"}
             size="sm"
-            onClick={() => window.open("https://www.facebook.com/share/175RmdCeS4/", "_blank")}
+            onClick={() => window.open("https://korichi-abderraouf.netlify.app/", "_blank")}
           >
             <i className="fa-brands fa-facebook text-base" />
           </IconButton>
@@ -154,7 +154,7 @@ export function Navbar() {
             variant="text"
             color={isScrolling ? "gray" : "white"}
             size="sm"
-            onClick={() => window.open("https://www.instagram.com/nchriha_by_innovia_algerie", "_blank")}
+            onClick={() => window.open("https://korichi-abderraouf.netlify.app/", "_blank")}
           >
             <i className="fa-brands fa-instagram text-base" />
           </IconButton>
