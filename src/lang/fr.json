@@ -31,17 +31,16 @@
     "Système Alertes Temps Réel": "Système d'alertes en temps réel"
   },
   "Features": {
-    "Votre Marketplace App": "Votre Marketplace App",
     "Diverse Resources": "Diverse Resources",
     "Description": "Achetez et vendez en toute simplicité, où que vous soyez. Que vous soyez dans les transports, en train d'attendre un ami ou que vous ayez juste quelques minutes devant vous, notre application s'intègre parfaitement à votre quotidien",
-    "Vendeurs Vérifiés": "Vendeurs Vérifiés",
-    "Vendeurs Vérifiés Description": "Faites confiance à une communauté fiable. Nos vendeurs sont vérifiés pour garantir des transactions sécurisées et une expérience sans stress.",
     "Expérience Interactive": "Expérience Interactive",
-    "Expérience Interactive Description": "Discutez directement avec les acheteurs et vendeurs grâce à notre système de messagerie intégré. Négociez, posez vos questions et concluez vos affaires en toute transparence.",
+    "Expérience Interactive Description": "Une application simple qui vous permet de partager, échanger et interagir avec d’autres utilisateurs dans un espace social convivial et dynamique.",
     "Suivi Personnalisé": "Suivi Personnalisé",
-    "Suivi Personnalisé Description": "Suivez vos annonces et vos ventes en temps réel. Recevez des notifications pour rester informé de chaque nouvelle opportunité.",
-    "Vitrines Professionnelles": "Vitrines Professionnelles",
-    "Vitrines Professionnelles Description": "Donnez de la visibilité à votre entreprise grâce à votre vitrine professionnelle personnalisée. Présentez vos produits, vos services et vos offres spéciales directement sur la marketplace pour toucher une audience ciblée et augmenter vos ventes.",
+    "Suivi Personnalisé Description": "Suivez vos centres et vos préférences comme vous le souhaitez, avec des valeurs entièrement personnalisables pour rester informé en temps réel.",
+    "Rapports Automatiques": "Rapports Automatiques",
+    "Rapports Automatiques Description": "Générez automatiquement des rapports détaillés sur vos centres en temps réel avec analyses et graphiques personnalisés",
+    "Paiement Abonnement": "Paiement en ligne",
+    "Paiement Abonnement Description": "Payez vos abonnements Premium en ligne rapidement et en toute sécurité avec suivi automatique de vos échéances",
     "Plus de 10,000 utilisateurs nous font confiance": "Plus de 10,000 utilisateurs nous font confiance"
   },
   "Carousel": {

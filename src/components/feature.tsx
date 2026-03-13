@@ -14,68 +14,61 @@ export function Features() {
     {
       icon: (
         <Image
-          src="/Cash_Payment.gif"
-          alt={t('Features.Vendeurs Vérifiés') || "Vendeurs Vérifiés"}
-          width={144}
-          height={144}
-          className="rounded-3xl object-cover"
-          loading="lazy"
-        />
-      ),
-      title: t('Features.Vendeurs Vérifiés') || "Vendeurs Vérifiés",
-      children: t('Features.Vendeurs Vérifiés Description') || "Faites confiance à une communauté fiable. Nos vendeurs sont vérifiés pour garantir des transactions sécurisées et une expérience sans stress.",
-    },
-    {
-      icon: (
-        <Image
           src="/Messaging.gif"
-          alt={t('Features.Expérience Interactive') || "Expérience Interactive"}
+          alt={t('Features.Expérience Interactive')}
           width={144}
           height={144}
           className="rounded-3xl object-cover"
           loading="lazy"
         />
       ),
-      title: t('Features.Expérience Interactive') || "Expérience Interactive",
-      children: t('Features.Expérience Interactive Description') || "Discutez directement avec les acheteurs et vendeurs grâce à notre système de messagerie intégré. Négociez, posez vos questions et concluez vos affaires en toute transparence.",
+      title: t('Features.Expérience Interactive'),
+      children: t('Features.Expérience Interactive Description'),
     },
     {
       icon: (
         <Image
           src="/suivi_personaliser.gif"
-          alt={t('Features.Suivi Personnalisé') || "Suivi Personnalisé"}
+          alt={t('Features.Suivi Personnalisé')}
           width={144}
           height={144}
           className="rounded-3xl object-cover"
           loading="lazy"
         />
       ),
-      title: t('Features.Suivi Personnalisé') || "Suivi Personnalisé",
-      children: t('Features.Suivi Personnalisé Description') || "Suivez vos annonces et vos ventes en temps réel. Recevez des notifications pour rester informé de chaque nouvelle opportunité.",
+      title: t('Features.Suivi Personnalisé'),
+      children: t('Features.Suivi Personnalisé Description'),
     },
     {
       icon: (
         <Image
-          src="/vitrine_pro.gif"
-          alt={t('Features.Vitrines Professionnelles') || "Vitrines Professionnelles"}
+          src="/Online report.gif"
+          alt={t('Features.Rapports Automatiques')}
           width={144}
           height={144}
           className="rounded-3xl object-cover"
           loading="lazy"
         />
       ),
-      title: t('Features.Vitrines Professionnelles') || "Vitrines Professionnelles",
-      children: t('Features.Vitrines Professionnelles Description') || "Donnez de la visibilité à votre entreprise grâce à votre vitrine professionnelle personnalisée. Présentez vos produits, vos services et vos offres spéciales directement sur la marketplace pour toucher une audience ciblée et augmenter vos ventes.",
+      title: t('Features.Rapports Automatiques'),
+      children: t('Features.Rapports Automatiques Description'),
+    },
+    {
+      icon: (
+        <Image
+          src="/E-Wallet.gif"
+          alt={t('Features.Paiement Abonnement')}
+          width={144}
+          height={144}
+          className="rounded-3xl object-cover"
+          loading="lazy"
+        />
+      ),
+      title: t('Features.Paiement Abonnement'),
+      children: t('Features.Paiement Abonnement Description'),
     },
   ];
 
-  const getTextAlignment = () => {
-    return isRTL ? "text-center lg:text-right" : "text-center lg:text-left";
-  };
-
-  const getContainerDirection = () => {
-    return isRTL ? "lg:flex-row-reverse" : "";
-  };
   return (
     <section className="py-28 px-4 relative overflow-hidden" id="about" dir={isRTL ? "rtl" : "ltr"}>
       {/* Background bubbles */}
@@ -86,9 +79,6 @@ export function Features() {
       </div>
 
       <div className="container mx-auto mb-20 text-center relative z-10">
-        <Typography color="blue-gray" className="mb-2 font-bold uppercase">
-          {t('Features.Votre Marketplace App')}
-        </Typography>
         <h2 className="text-4xl md:text-6xl font-black text-dark leading-tight mb-6">
           {t('Features.Diverse Resources')}
           <div className="flex justify-center">
