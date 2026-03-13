@@ -296,7 +296,6 @@ export function Navbar() {
                         cursor: "pointer",
                         color: "black",
                         backgroundColor: selected.code === code ? "#159FD8" : "transparent",
-                        color: selected.code === code ? "white" : "black",
                       }}
                     >
                       <img src={flag} alt={label} style={{ width: 24, height: 16, objectFit: "cover" }} loading="lazy" />

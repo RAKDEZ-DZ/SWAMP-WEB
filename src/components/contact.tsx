@@ -125,10 +125,6 @@ export default function Contact() {
                     className="w-full px-5 py-4 border-2 border-gray-200 rounded-2xl outline-none transition-all duration-300"
                     style={{
                       borderColor: "#e5e7eb",
-                      focus: {
-                        borderColor: "#159FD8",
-                        boxShadow: "0 0 0 4px rgba(21, 159, 216, 0.2)",
-                      },
                     }}
                     onFocus={(e) => {
                       e.target.style.borderColor = "#159FD8";
@@ -160,11 +156,7 @@ export default function Contact() {
                     placeholder={t("contact.form.message.placeholder")}
                     className="w-full px-5 py-4 border-2 border-gray-200 rounded-2xl outline-none transition-all duration-300 resize-none"
                     style={{
-                      borderColor: "#e5e7eb",
-                      focus: {
-                        borderColor: "#159FD8",
-                        boxShadow: "0 0 0 4px rgba(21, 159, 216, 0.2)",
-                      },
+                      borderColor: "#e5e7eb"
                     }}
                     onFocus={(e) => {
                       e.target.style.borderColor = "#159FD8";
