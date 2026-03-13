@@ -47,9 +47,7 @@ export function Loading3D({ onFinish }: SplashScreenProps) {
             />
           </div>
         </div>
-        <div className="signature-container">
-          <span className="signature-text">by INNOVIA ALGERIE</span>
-        </div>
+       
       </div>
 
 
