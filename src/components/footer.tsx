@@ -47,7 +47,7 @@ export function Footer() {
             <div className="flex items-center gap-3 mb-5">
               <MapPinIcon className="w-6 h-6 text-white" />
               <Typography color="white" className="font-normal">
-                {t('Footer.Résidence Lina, Cité Adrar, 05000 Béjaïa, Algérie')}
+                {t('Footer.Cité Tobal, 05000 Béjaïa, Algérie')}
               </Typography>
             </div>
             <ul className="flex flex-wrap items-center justify-center md:justify-start">
