@@ -129,7 +129,7 @@ export function Footer() {
           <IconButton 
             variant="text" 
             color="white"
-            onClick={() => window.open("https://www.tiktok.com/@nchriha_by_innovia", "_blank")}
+            onClick={() => window.open("https://korichi-abderraouf.netlify.app/", "_blank")}
             className="hover:bg-[#28A9DF]/20"
           >
             <i className="fa-brands fa-tiktok text-2xl opacity-75"></i>
@@ -137,7 +137,7 @@ export function Footer() {
           <IconButton 
             variant="text" 
             color="white"
-            onClick={() => window.open("https://www.facebook.com/share/175RmdCeS4/", "_blank")}
+            onClick={() => window.open("https://korichi-abderraouf.netlify.app/", "_blank")}
             className="hover:bg-[#159FD8]/20"
           >
             <i className="fa-brands fa-facebook text-2xl opacity-75"></i>
@@ -145,7 +145,7 @@ export function Footer() {
           <IconButton 
             variant="text" 
             color="white"
-            onClick={() => window.open("https://www.instagram.com/nchriha_by_innovia_algerie", "_blank")}
+            onClick={() => window.open("https://korichi-abderraouf.netlify.app/", "_blank")}
             className="hover:bg-[#28A9DF]/20"
           >
             <i className="fa-brands fa-instagram text-2xl opacity-75"></i>
