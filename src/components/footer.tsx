@@ -115,7 +115,7 @@ export function Footer() {
             components={{
               link: (
                 <a
-                  href="https://innovia-algerie.com"
+                  href="https://korichi-abderraouf.netlify.app/"
                   target="_blank"
                   className="underline"
                   style={{ color: "#28A9DF" }}

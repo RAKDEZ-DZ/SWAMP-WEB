@@ -10,16 +10,16 @@ export default function Contact() {
 
   const [formData, setFormData] = useState({
     subject: "",
-    message: ""
+    message: "",
   });
   const [isSubmitting, setIsSubmitting] = useState(false);
   const [submitStatus, setSubmitStatus] = useState("");
 
   const handleInputChange = (e: any) => {
     const { name, value } = e.target;
-    setFormData(prev => ({
+    setFormData((prev) => ({
       ...prev,
-      [name]: value
+      [name]: value,
     }));
   };
 
@@ -31,7 +31,7 @@ export default function Contact() {
     const subject = encodeURIComponent(formData.subject);
     const body = encodeURIComponent(formData.message);
 
-    const mailtoLink = `mailto:contact@innovia-algerie.com?subject=${subject}&body=${body}`;
+    const mailtoLink = `mailto:korichi.abderraouf.dev@gmail.com?subject=${subject}&body=${body}`;
     window.open(mailtoLink, "_blank");
 
     setTimeout(() => {
@@ -48,13 +48,13 @@ export default function Contact() {
     {
       icon: <EnvelopeIcon className="w-8 h-8 text-white" />,
       title: t("contact.methods.email.title"),
-      info: t("contact.methods.email.info")
+      info: t("contact.methods.email.info"),
     },
     {
       icon: <PhoneIcon className="w-8 h-8 text-white" />,
       title: t("contact.methods.phone.title"),
-      info: t("contact.methods.phone.info")
-    }
+      info: t("contact.methods.phone.info"),
+    },
   ];
 
   return (
@@ -84,7 +84,10 @@ export default function Contact() {
                   <div
                     key={index}
                     className="group flex items-center space-x-5 p-5 rounded-2xl bg-white/10 hover:bg-white/20 transition-all duration-500 cursor-pointer transform hover:-translate-y-2 hover:shadow-2xl border border-white/10 hover:border-white/30"
-                    style={{ boxShadow: "0 20px 25px -5px rgba(21, 159, 216, 0.2), 0 10px 10px -5px rgba(21, 159, 216, 0.1)" }}
+                    style={{
+                      boxShadow:
+                        "0 20px 25px -5px rgba(21, 159, 216, 0.2), 0 10px 10px -5px rgba(21, 159, 216, 0.1)",
+                    }}
                   >
                     <div className="flex-shrink-0 w-14 h-14 bg-gradient-to-br from-[#159FD8] via-[#28A9DF] to-[#159FD8] rounded-2xl flex items-center justify-center text-white font-bold text-xl group-hover:scale-110 group-hover:rotate-12 transition-all duration-300 shadow-lg">
                       {method.icon}
@@ -104,7 +107,10 @@ export default function Contact() {
             <div className="bg-white/95 backdrop-blur-sm rounded-3xl p-8 shadow-2xl border border-white/30 relative overflow-hidden">
               <div className="space-y-6 relative z-10">
                 <div className="space-y-2">
-                  <label htmlFor="subject" className="block text-sm font-bold text-gray-700 uppercase tracking-wide">
+                  <label
+                    htmlFor="subject"
+                    className="block text-sm font-bold text-gray-700 uppercase tracking-wide"
+                  >
                     {t("contact.form.subject.label")}
                   </label>
                   <input
@@ -117,16 +123,17 @@ export default function Contact() {
                     required
                     placeholder={t("contact.form.subject.placeholder")}
                     className="w-full px-5 py-4 border-2 border-gray-200 rounded-2xl outline-none transition-all duration-300"
-                    style={{ 
+                    style={{
                       borderColor: "#e5e7eb",
                       focus: {
                         borderColor: "#159FD8",
-                        boxShadow: "0 0 0 4px rgba(21, 159, 216, 0.2)"
-                      }
+                        boxShadow: "0 0 0 4px rgba(21, 159, 216, 0.2)",
+                      },
                     }}
                     onFocus={(e) => {
                       e.target.style.borderColor = "#159FD8";
-                      e.target.style.boxShadow = "0 0 0 4px rgba(21, 159, 216, 0.2)";
+                      e.target.style.boxShadow =
+                        "0 0 0 4px rgba(21, 159, 216, 0.2)";
                     }}
                     onBlur={(e) => {
                       e.target.style.borderColor = "#e5e7eb";
@@ -136,7 +143,10 @@ export default function Contact() {
                 </div>
 
                 <div className="space-y-2">
-                  <label htmlFor="message" className="block text-sm font-bold text-gray-700 uppercase tracking-wide">
+                  <label
+                    htmlFor="message"
+                    className="block text-sm font-bold text-gray-700 uppercase tracking-wide"
+                  >
                     {t("contact.form.message.label")}
                   </label>
                   <textarea
@@ -149,16 +159,17 @@ export default function Contact() {
                     required
                     placeholder={t("contact.form.message.placeholder")}
                     className="w-full px-5 py-4 border-2 border-gray-200 rounded-2xl outline-none transition-all duration-300 resize-none"
-                    style={{ 
+                    style={{
                       borderColor: "#e5e7eb",
                       focus: {
                         borderColor: "#159FD8",
-                        boxShadow: "0 0 0 4px rgba(21, 159, 216, 0.2)"
-                      }
+                        boxShadow: "0 0 0 4px rgba(21, 159, 216, 0.2)",
+                      },
                     }}
                     onFocus={(e) => {
                       e.target.style.borderColor = "#159FD8";
-                      e.target.style.boxShadow = "0 0 0 4px rgba(21, 159, 216, 0.2)";
+                      e.target.style.boxShadow =
+                        "0 0 0 4px rgba(21, 159, 216, 0.2)";
                     }}
                     onBlur={(e) => {
                       e.target.style.borderColor = "#e5e7eb";
@@ -173,8 +184,8 @@ export default function Contact() {
                   onClick={handleSubmit}
                   disabled={isSubmitting}
                   className="w-full font-bold py-5 px-8 rounded-2xl text-white"
-                  style={{ 
-                    background: "linear-gradient(to right, #159FD8, #28A9DF)"
+                  style={{
+                    background: "linear-gradient(to right, #159FD8, #28A9DF)",
                   }}
                 >
                   {t("contact.form.submit")}

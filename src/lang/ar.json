@@ -10,7 +10,7 @@
     "getApp": "احصل على التطبيق",
     "Google Play": "جوجل بلاي",
     "App Store": "آب ستور",
-    "text": "© {{year}} صممه <link>فريق إنوفيا الجزائر</link>."
+    "text": "© {{year}} صممه <link>فريق  SWAMP</link>."
   },
   "Hero": {
     "Nouvelle application disponible": "تطبيق جديد متوفر",
@@ -87,11 +87,11 @@
     "methods": {
       "email": {
         "title": "البريد الإلكتروني",
-        "info": "contact@innovia-algerie.com"
+        "info": "korichi.abderraouf.dev@gmail.com"
       },
       "phone": {
         "title": "الهاتف",
-        "info": "+33 605739875"
+        "info": "+213 665710394"
       }
     },
     "form": {

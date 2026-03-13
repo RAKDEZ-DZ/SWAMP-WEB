@@ -10,7 +10,7 @@
     "getApp": "Obtenez l'application",
     "App Store": "App Store",
     "Google Play": "Google Play",
-    "text": "© {{year}} Conçu par <link>innovia algerie team</link>."
+    "text": "© {{year}} Conçu par <link>SWAMP team</link>."
   },
   "Hero": {
     "Nouvelle application disponible": "Nouvelle application disponible",
@@ -87,11 +87,11 @@
     "methods": {
       "email": {
         "title": "Email",
-        "info": "contact@innovia-algerie.com"
+        "info": "korichi.abderraouf.dev@gmail.com"
       },
       "phone": {
         "title": "Téléphone",
-        "info": "+33 605739875"
+        "info": "+213 665710394"
       }
     },
     "form": {
