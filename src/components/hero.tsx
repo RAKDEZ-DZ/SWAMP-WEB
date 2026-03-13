@@ -1,137 +1,35 @@
 "use client";
-import { Canvas, useFrame } from "@react-three/fiber";
-import { OrbitControls, useGLTF, useTexture, Html } from "@react-three/drei";
-import { Suspense, useRef, useEffect, useState } from "react";
 import Image from "next/image";
 import { Button, Typography } from "@material-tailwind/react";
 import { useTranslation } from "react-i18next";
 
-function AnimatedPhoneModel({
-  modelPath,
-  texturePath,
-  position = [0, 0, 0],
-  baseRotation = [0, 0, 0],
-  animationSpeed = 1,
-  scale = [7, 7, 7],
-}: any) {
-  const groupRef = useRef<any>(null!);
-  const { scene, nodes }: any = useGLTF(modelPath);
-  const texture = useTexture(texturePath) as any;
-
-  useFrame((state) => {
-    if (groupRef.current) {
-      const time = state.clock.elapsedTime;
-      groupRef.current.rotation.y = baseRotation[1] + Math.sin(time * animationSpeed) * 0.2;
-      groupRef.current.position.y = position[1] + Math.sin(time * animationSpeed * 0.8) * 0.08;
-      groupRef.current.rotation.x = baseRotation[0] + Math.sin(time * animationSpeed * 0.5) * 0.03;
-    }
-  });
-
-  return (
-    <group
-      ref={groupRef}
-      dispose={null}
-      position={position}
-      rotation={baseRotation}
-      scale={scale}
-    >
-      <primitive object={scene.clone()} />
-      {nodes?.Screen && (
-        <mesh geometry={nodes.Screen.geometry}>
-          <meshBasicMaterial map={texture} />
-        </mesh>
-      )}
-    </group>
-  );
-}
-
-// Hook pour détecter la taille de l'écran
-function useResponsiveScale() {
-  const [scale, setScale] = useState([2.5, 2.5, 2.5]);
-  const [spacing, setSpacing] = useState(1.4);
-
-  useEffect(() => {
-    const updateScale = () => {
-      const width = window.innerWidth;
-      if (width < 640) { // mobile
-        setScale([4, 3.5, 4]);
-        setSpacing(0.6);
-      } else if (width < 768) { // tablet
-        setScale([2.2, 2.2, 2.2]);
-        setSpacing(0.4);
-      } else if (width < 1024) { // desktop small
-        setScale([2.5, 2.5, 2.5]);
-        setSpacing(0.4);
-      } else { // desktop large
-        setScale([3, 3, 3]);
-        setSpacing(0.4);
-      }
-    };
-
-    updateScale();
-    window.addEventListener('resize', updateScale);
-    return () => window.removeEventListener('resize', updateScale);
-  }, []);
-
-  return { scale, spacing };
-}
-
-// Scène avec les deux téléphones - version responsive optimisée
 function PhonesScene() {
-  const { scale, spacing } = useResponsiveScale();
-
   return (
-    <Canvas
-      camera={{ position: [0, 0, 6], fov: 45 }}
-      className="w-full h-full"
-      gl={{ antialias: true, alpha: true }}
-    >
-      <ambientLight intensity={0.4} />
-      <directionalLight position={[5, 5, 5]} intensity={1.2} castShadow />
-      <directionalLight position={[-3, 3, 2]} intensity={0.8} />
-      <pointLight position={[0, 3, 2]} intensity={0.6} color="#159FD8" />
-      <pointLight position={[2, -2, 3]} intensity={0.4} color="#28A9DF" />
-
-      <Suspense fallback={
-        <Html center>
-          <div className="flex items-center justify-center">
-            <div className="animate-spin rounded-full h-8 w-8 border-b-2 border-white"></div>
-          </div>
-        </Html>
-      }>
-        {/* Téléphone gauche */}
-        <AnimatedPhoneModel
-          modelPath="/phone.glb"
-          texturePath="/back.jpg"
-          position={[-spacing, -0.7, 0]}
-          baseRotation={[0.1, Math.PI / 6, 0]}
-          animationSpeed={0.8}
-          scale={scale}
+    <div className="w-full flex items-end justify-center gap-4 px-2">
+      {/* Téléphone gauche */}
+      <div className="w-[45%] max-w-[180px] lg:max-w-[260px] transform -rotate-6 hover:rotate-0 transition-transform duration-500 drop-shadow-2xl">
+        <Image
+          src="/swamp-left.png"
+          alt="App screen 1"
+          width={300}
+          height={600}
+          className="w-full h-auto object-contain"
         />
+      </div>
 
-        {/* Téléphone droit */}
-        <AnimatedPhoneModel
-          modelPath="/phone.glb"
-          texturePath="/back.jpg"
-          position={[spacing, -0.5, -0.5]}
-          baseRotation={[-0.05, -Math.PI / 6, 0]}
-          animationSpeed={1.2}
-          scale={scale}
+      {/* Téléphone droit */}
+      <div className="w-[45%] max-w-[180px] lg:max-w-[220px] transform rotate-6 hover:rotate-0 transition-transform duration-500 drop-shadow-2xl mt-6">
+        <Image
+          src="/swamp-portrait.png"
+          alt="App screen 2"
+          width={300}
+          height={600}
+          className="w-full h-auto object-contain"
         />
-      </Suspense>
-
-      <OrbitControls
-        enableZoom={false}
-        enablePan={false}
-        autoRotate
-        autoRotateSpeed={0.5}
-        maxPolarAngle={Math.PI / 2}
-        minPolarAngle={Math.PI / 3}
-      />
-    </Canvas>
+      </div>
+    </div>
   );
 }
-
 // Composant pour les boutons de téléchargement
 function DownloadButtons() {
   const { t } = useTranslation();
@@ -181,10 +79,6 @@ export default function Hero() {
     const base = centerOnMobile ? "text-center" : "";
     const desktop = isRTL ? "lg:text-right" : "lg:text-left";
     return `${base} ${desktop}`;
-  };
-
-  const getFlexClasses = () => {
-    return isRTL ? "justify-center lg:justify-end" : "justify-center lg:justify-start";
   };
 
   const getMarginClasses = () => {
@@ -266,12 +160,12 @@ export default function Hero() {
               </div>
             </div>
 
-            {/* Section téléphones 3D */}
-            <div className="order-1 lg:order-2 h-64 sm:h-80 md:h-96 lg:h-[600px] w-full pt-32">
-              <div className="relative w-full h-full">
-                <PhonesScene />
-              </div>
-            </div>
+            {/* Section téléphones */}
+<div className="order-1 lg:order-2 w-full py-4 lg:py-16 mt-16 lg:mt-0">
+  <div className="w-full">
+    <PhonesScene />
+  </div>
+</div>
           </div>
         </div>
       </header>

@@ -4,10 +4,8 @@ import { useState, useEffect } from "react";
 import { useTranslation } from "react-i18next";
 
 const screenshots = [
-  "/feature_phone-removebg.png",
-  "/feature_phone-removebg.png",
-  "/feature_phone-removebg.png",
-  "/feature_phone-removebg.png",
+  "/swamp-left.png",
+  "/swamp-portrait.png",
 ];
 
 export default function ModernCarousel() {
