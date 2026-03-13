@@ -28,7 +28,7 @@ export function Features() {
     {
       icon: (
         <Image
-          src="/suivi_personaliser.gif"
+          src="/Preferences.gif"
           alt={t('Features.Suivi Personnalisé')}
           width={144}
           height={144}
