@@ -324,28 +324,31 @@ function DownloadButtons() {
   );
 }
 
-const FEATURES = [
+interface Feature {
+  icon: string;
+  key: string;
+  key2?: string;
+}
+
+const FEATURES: Feature[] = [
   { icon: "📈", key: "Hero.Suivi et historiques de Consommation" },
   { icon: "⚡", key: "Hero.Statistiques Temps Réel" },
   { icon: "🔐", key: "Hero.100% Sécurisé" },
   { icon: "🔔", key: "Hero.Système Alertes Temps Réel" },
   { icon: "📱", key: "Hero.Interface Intuitive", key2: "Hero.Ultra Rapide" },
   { icon: "🌍", key: "Hero.Partout en Algérie" },
-] as const;
+];
 
 export default function Hero() {
   const { t, i18n } = useTranslation();
   const isRTL = i18n.language === "ar";
 
-  const align = (centerMobile = true) =>
-    `${centerMobile ? "text-center" : ""} ${isRTL ? "lg:text-right" : "lg:text-left"}`;
-
+  const align = (centerMobile = true) =>`${centerMobile ? "text-center" : ""} ${isRTL ? "lg:text-right" : "lg:text-left"}`;
   const marginX = () => (isRTL ? "mx-auto lg:mr-0" : "mx-auto lg:mx-0");
 
   return (
     <div id="home" dir={isRTL ? "rtl" : "ltr"} className="relative w-full overflow-hidden">
-      <div
-        className="absolute inset-0"
+      <div className="absolute inset-0"
         style={{ background: "linear-gradient(0deg, rgba(255,255,255,1) 0%, #159FD8 86%)" }}
       />
 
@@ -357,8 +360,7 @@ export default function Hero() {
           <div
             key={i}
             className="absolute w-2 h-2 bg-white rounded-full animate-pulse"
-            style={{
-              left: `${l}%`,
+            style={{left: `${l}%`,
               top: `${t}%`,
               animationDelay: `${(i * 0.4) % 3}s`,
               animationDuration: `${3 + (i % 3)}s`,
