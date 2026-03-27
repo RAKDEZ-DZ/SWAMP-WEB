@@ -9,6 +9,7 @@
     "getApp": "Obtenez l'application",
     "App Store": "App Store",
     "Google Play": "Google Play",
+    "legalPage": "Mentions légales",
     "text": "© {{year}} Conçu par <link>SWAMP team</link>."
   },
   "Hero": {
@@ -48,11 +49,11 @@
   },
   "faq": {
     "title": "Questions fréquentes",
-    "subtitle": "Voici les réponses aux questions que les nouveaux utilisateurs se posent le plus souvent avant d’acheter ou vendre sur notre application",
+    "subtitle": "Voici les réponses aux questions que les nouveaux utilisateurs se posent le plus souvent avant d'acheter ou vendre sur notre application",
     "list": [
       {
-        "title": "Comment commencer sur l’application ?",
-        "desc": "Il suffit de télécharger l’application, créer un compte gratuit et commencer à découvrir toutes les fonctionnalités."
+        "title": "Comment commencer sur l'application ?",
+        "desc": "Il suffit de télécharger l'application, créer un compte gratuit et commencer à découvrir toutes les fonctionnalités."
       },
       {
         "title": "L'application est-elle gratuite ?",
@@ -71,11 +72,11 @@
         "desc": "Les paiements des abonnements sont sécurisés et automatisés. Vous pouvez payer via l'application direct en ligne, avec facture téléchargeable."
       },
       {
-        "title": "Que faire si j’ai un problème technique ?",
-        "desc": "Notre équipe support est disponible pour vous aider. Vous pouvez nous contacter directement via l’application."
+        "title": "Que faire si j'ai un problème technique ?",
+        "desc": "Notre équipe support est disponible pour vous aider. Vous pouvez nous contacter directement via l'application."
       }
     ],
-    "ctaTitle": "Commencez dès aujourd’hui",
+    "ctaTitle": "Commencez dès aujourd'hui",
     "ctaDesc": "Inscrivez-vous dès maintenant et bénéficiez de 7 jours d'essai gratuit pour gérer vos citernes, surveiller votre consommation et recevoir des alertes personnalisées.",
     "appStore": "App Store",
     "googlePlay": "Google Play"
@@ -127,6 +128,41 @@
       "duration": "Durée: {{duration}} mois",
       "autoBackup": "Sauvegarde automatique",
       "freeUpdates": "Mises à jour incluses"
+    }
+  },
+  
+  "legal": {
+    "hero": {
+      "title": "Mentions légales",
+      "subtitle": "Consultez nos conditions d'utilisation et notre politique de confidentialité pour comprendre comment fonctionne SWAMP et comment vos données sont protégées."
+    },
+    "tabs": {
+      "conditions": "Conditions",
+      "confidentialite": "Confidentialité"
+    },
+    "conditions": {
+      "heading": "Conditions générales d'utilisation",
+      "intro": "Merci d'utiliser SWAMP. Veuillez lire attentivement les conditions suivantes.",
+      "articles": [
+        { "title": "Article 1 : Objet", "content": "Les présentes conditions générales ont pour objet de définir les modalités et conditions d'utilisation de l'application." },
+        { "title": "Article 2 : Création de compte", "content": "L'utilisateur s'engage à fournir des informations exactes lors de la création de son compte et à les maintenir à jour." },
+        { "title": "Article 3 : Utilisation du service", "content": "L'utilisateur s'engage à utiliser l'application conformément aux lois en vigueur et à ne pas perturber son bon fonctionnement." },
+        { "title": "Article 4 : Responsabilités", "content": "L'utilisateur est responsable de l'utilisation de son compte et de la confidentialité de ses identifiants ." },
+        { "title": "Article 5 : Modifications", "content": "Nous nous réservons le droit de modifier les présentes conditions à tout moment.Les utilisateurs seront informés de ces modifications ." }
+      ]
+    },
+    "privacy": {
+      "heading": "Politique de confidentialité",
+      "intro": "Votre vie privée est importante pour nous. Voici comment nous protégeons vos données.",
+      "sections": [
+        { "title": "1. Collecte des données", "content": "Nous collectons uniquement les données nécessaires au fonctionnement de l'application, notamment les informations de compte, les données de consommation d'eau et les interactions avec l'application." },
+        { "title": "2. Utilisation des données", "content": "Les données collectées sont utilisées pour améliorer l'expérience utilisateur, assurer le bon fonctionnement des alertes et optimiser la gestion intelligente des ressources." },
+        { "title": "3. Protection des données","content": "Nous mettons en place des mesures de sécurité pour protéger vos données personnelles."},
+        { "title": "4. Partage des données", "content": "Nous ne vendons ni ne partageons vos données personnelles avec des tiers sans votre consentement, sauf obligation légale." },
+        { "title": "5. Droits des utilisateurs", "content": "Vous pouvez accéder, modifier ou supprimer vos données à tout moment via votre compte utilisateur." }
+        
+       
+      ]
     }
   }
 }

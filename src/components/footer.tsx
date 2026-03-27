@@ -4,22 +4,35 @@ import { Typography, IconButton, Button } from "@material-tailwind/react";
 import { MapPinIcon } from "@heroicons/react/24/solid";
 import { useTranslation , Trans} from "react-i18next";
 import React from "react";
+import { usePathname, useRouter } from "next/navigation"; 
 
 export function Footer() {
   const { t, i18n } = useTranslation();
+  const router = useRouter();
+  const pathname = usePathname(); 
+
   const LINKS = [
     { label: t('Navbar.home'), href: "#home" },
     { label: t('Navbar.about'), href: "#about" },
     { label: t('Navbar.contact'), href: "#contact" },
   ];
+
+  const LEGAL_LINKS = [
+    { label: t('Footer.legalPage'), href: "/legal" }
+  ];
+
   const CURRENT_YEAR = new Date().getFullYear();
 
-  const handleScroll = (e: React.MouseEvent<HTMLAnchorElement, MouseEvent>, href: string) => {
-    e.preventDefault();
+  
+  const handleScroll = (href: string) => {
     const targetId = href.replace('#', '');
-    const element = document.getElementById(targetId);
-    if (element) {
-      element.scrollIntoView({ behavior: 'smooth' });
+    if (pathname === "/") {
+      
+      const element = document.getElementById(targetId);
+      if (element) element.scrollIntoView({ behavior: 'smooth' });
+    } else {
+      
+      router.push(`/#${targetId}`);
     }
   };
 
@@ -58,12 +71,27 @@ export function Footer() {
                     href={href}
                     color="white"
                     className="py-1 px-3 font-medium cursor-pointer transition-colors hover:text-gray-200"
-                    onClick={(e: any) => handleScroll(e, href)}
+                    onClick={(e: any) => {
+                      e.preventDefault();
+                      handleScroll(href); 
+                    }}
                   >
                     {label}
                   </Typography>
                 </li>
               ))}
+              {LEGAL_LINKS.map(({ label, href }) => (
+                <li key={label}>
+                  <Typography
+                    as="a"
+                    href={href}
+                    color="white"
+                    className="py-1 px-3 font-medium cursor-pointer transition-colors hover:text-gray-200"
+                  >
+                   {label} 
+                 </Typography>
+               </li>
+             ))}
             </ul>
           </div>
 
