@@ -9,7 +9,7 @@
     "getApp": "احصل على التطبيق",
     "Google Play": "جوجل بلاي",
     "App Store": "آب ستور",
-     "legalPage": "البيانات القانونية",
+    "legalPage": "الشروط والخصوصية",
     "text": "© {{year}} صممه <link>فريق  SWAMP</link>."
   },
   "Hero": {
@@ -133,12 +133,12 @@
   
   "legal": {
     "hero": {
-      "title": "الإشعارات القانونية",
+      "title": "الشروط والخصوصية",
       "subtitle": "راجع شروط الاستخدام وسياسة الخصوصية لفهم كيفية عمل SWAMP وكيفية حماية بياناتك."
     },
     "tabs": {
-      "conditions": "الشروط",
-      "confidentialite": "الخصوصية"
+      "conditions": "شروط الاستخدام",
+      "confidentialite": "سياسة الخصوصية"
     },
     "conditions": {
       "heading": "الشروط العامة للاستخدام",

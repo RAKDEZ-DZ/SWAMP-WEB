@@ -9,7 +9,7 @@
     "getApp": "Obtenez l'application",
     "App Store": "App Store",
     "Google Play": "Google Play",
-    "legalPage": "Mentions légales",
+    "legalPage": "conditions et confidentialité",
     "text": "© {{year}} Conçu par <link>SWAMP team</link>."
   },
   "Hero": {
@@ -133,12 +133,12 @@
   
   "legal": {
     "hero": {
-      "title": "Mentions légales",
+      "title": "Conditions et Confidentialité",
       "subtitle": "Consultez nos conditions d'utilisation et notre politique de confidentialité pour comprendre comment fonctionne SWAMP et comment vos données sont protégées."
     },
     "tabs": {
-      "conditions": "Conditions",
-      "confidentialite": "Confidentialité"
+      "conditions": "Conditions d'utilisation",
+      "confidentialite": "Politique de confidentialité"
     },
     "conditions": {
       "heading": "Conditions générales d'utilisation",
