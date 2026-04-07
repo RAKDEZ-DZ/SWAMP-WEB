@@ -3,7 +3,7 @@ import { Typography } from "@material-tailwind/react";
 import { useState, useEffect } from "react";
 import { useTranslation } from "react-i18next";
 
-const screenshots = [ "/swamp-left.png", "/maquette.png", "/maquette1.png","/maquette2.png","/maquette3.png","/maquette4.png",
+const screenshots = [ "/swamp-portrait.png", "/maquette.png", "/maquette1.png","/maquette2.png","/maquette3.png","/maquette4.png",
 "/maquette5.png","/maquette6.png","/maquette7.png","/maquette8.png","/maquette9.png"
 ];
 
