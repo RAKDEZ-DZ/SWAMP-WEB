@@ -49,12 +49,7 @@ function DownloadButtons() {
   `;
 
   const handleGooglePlayClick = () => {
-    const link = document.createElement('a');
-    link.href = 'https://github.com/RAKDEZ-DZ/SWAMP-WEB/releases/download/v1.0.0/universal.apk';
-    link.download = 'universal.apk';
-    document.body.appendChild(link);
-    link.click();
-    document.body.removeChild(link);
+    window.location.href ='https://github.com/RAKDEZ-DZ/SWAMP-WEB/releases/latest/download/universal.apk';
   };
 
   return (

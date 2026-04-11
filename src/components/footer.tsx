@@ -36,6 +36,10 @@ export function Footer() {
     }
   };
 
+  const handleGooglePlayClick = () => {
+    window.location.href ='https://github.com/RAKDEZ-DZ/SWAMP-WEB/releases/latest/download/universal.apk';
+  };
+
   return (
     <footer
       className="px-8 pt-44"
@@ -116,7 +120,7 @@ export function Footer() {
                 {t('Footer.App Store')}
               </Button>
               <Button 
-                aria-label="Google Play" 
+                aria-label="Google Play"  onClick={handleGooglePlayClick}
                 className="flex items-center justify-center"
                 style={{ backgroundColor: "#fff", color: "black" }}
               >
