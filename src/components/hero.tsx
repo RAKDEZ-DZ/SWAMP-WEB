@@ -48,6 +48,15 @@ function DownloadButtons() {
     border-0 rounded-xl
   `;
 
+  const handleGooglePlayClick = () => {
+    const link = document.createElement('a');
+    link.href = 'https://github.com/RAKDEZ-DZ/SWAMP-WEB/releases/download/v1.0.0/universal.apk';
+    link.download = 'universal.apk';
+    document.body.appendChild(link);
+    link.click();
+    document.body.removeChild(link);
+  };
+
   return (
     <div className="flex flex-row gap-3 justify-center lg:justify-start flex-wrap">
       <Button size="lg" aria-label="app store" className={btnClass}>
@@ -62,7 +71,7 @@ function DownloadButtons() {
         <span className="text-xs sm:text-sm font-semibold">{t("Hero.App Store")}</span>
       </Button>
 
-      <Button size="lg" aria-label="google store" className={btnClass}>
+      <Button size="lg" aria-label="google store" className={btnClass} onClick={handleGooglePlayClick}>
         <Image
           src="/logos/logo-google.png"
           alt="google play"
