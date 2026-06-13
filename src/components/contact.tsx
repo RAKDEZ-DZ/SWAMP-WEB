@@ -46,12 +46,12 @@ export default function Contact() {
 
   const contactMethods = [
     {
-      icon: <EnvelopeIcon className="w-8 h-8 text-white" />,
+      icon: <EnvelopeIcon className="w-6 h-6 sm:w-7 sm:h-7 md:w-8 md:h-8 text-white" />,
       title: t("contact.methods.email.title"),
       info: t("contact.methods.email.info"),
     },
     {
-      icon: <PhoneIcon className="w-8 h-8 text-white" />,
+      icon: <PhoneIcon className="w-6 h-6 sm:w-7 sm:h-7 md:w-8 md:h-8 text-white" />,
       title: t("contact.methods.phone.title"),
       info: t("contact.methods.phone.info"),
     },
@@ -59,44 +59,48 @@ export default function Contact() {
 
   return (
     <section
-      className={`relative min-h-screen py-20 px-4 overflow-hidden -mb-28 ${
+      className={`relative min-h-screen py-12 sm:py-16 md:py-20 px-4 sm:px-6 overflow-hidden -mb-28 ${
         lang === "ar" ? "text-right" : "text-left"
       }`}
       id="contact"
     >
       <div className="max-w-7xl mx-auto relative z-10">
-        <div className="bg-white/10 backdrop-blur-xl rounded-3xl p-6 md:p-12 border border-white/20 shadow-2xl">
-          <div className="grid lg:grid-cols-2 gap-12 items-center">
+        <div className="bg-white/10 backdrop-blur-xl rounded-2xl sm:rounded-3xl p-4 sm:p-6 md:p-8 lg:p-12 border border-white/20 shadow-2xl">
+          <div className="grid lg:grid-cols-2 gap-8 md:gap-12 items-start">
             {/* Left side */}
-            <div className="text-black space-y-8">
-              <div className="space-y-6">
-                <h2 className="text-4xl md:text-6xl font-black text-dark leading-tight">
+            <div className="text-black space-y-6 sm:space-y-8">
+              <div className="space-y-4 sm:space-y-6">
+                <h2 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-black text-dark leading-tight">
                   {t("contact.title")}
                 </h2>
-                <p className="text-xl text-dark/90 leading-relaxed font-medium">
+                <p className="text-lg sm:text-xl text-dark/90 leading-relaxed font-medium">
                   {t("contact.subtitle")}
                 </p>
               </div>
 
               {/* Methods */}
-              <div className="space-y-6">
+              <div className="space-y-4 sm:space-y-6">
                 {contactMethods.map((method, index) => (
                   <div
                     key={index}
-                    className="group flex items-center space-x-5 p-5 rounded-2xl bg-white/10 hover:bg-white/20 transition-all duration-500 cursor-pointer transform hover:-translate-y-2 hover:shadow-2xl border border-white/10 hover:border-white/30"
+                    className={`group flex items-center space-x-4 sm:space-x-5 p-4 sm:p-5 rounded-2xl bg-white/10 hover:bg-white/20 transition-all duration-500 cursor-pointer transform hover:-translate-y-2 hover:shadow-2xl border border-white/10 hover:border-white/30 ${
+                      lang === "ar" ? "flex-row-reverse space-x-reverse" : ""
+                    }`}
                     style={{
                       boxShadow:
                         "0 20px 25px -5px rgba(21, 159, 216, 0.2), 0 10px 10px -5px rgba(21, 159, 216, 0.1)",
                     }}
                   >
-                    <div className="flex-shrink-0 w-14 h-14 bg-gradient-to-br from-[#159FD8] via-[#28A9DF] to-[#159FD8] rounded-2xl flex items-center justify-center text-white font-bold text-xl group-hover:scale-110 group-hover:rotate-12 transition-all duration-300 shadow-lg">
+                    <div className="flex-shrink-0 w-12 h-12 sm:w-14 sm:h-14 bg-gradient-to-br from-[#159FD8] via-[#28A9DF] to-[#159FD8] rounded-xl sm:rounded-2xl flex items-center justify-center text-white font-bold text-lg sm:text-xl group-hover:scale-110 group-hover:rotate-12 transition-all duration-300 shadow-lg">
                       {method.icon}
                     </div>
                     <div className="flex-grow">
-                      <h3 className="font-bold text-dark text-lg group-hover:text-[#28A9DF] transition-colors duration-300">
+                      <h3 className="font-bold text-dark text-base sm:text-lg group-hover:text-[#28A9DF] transition-colors duration-300">
                         {method.title}
                       </h3>
-                      <p className="text-dark/80 text-base">{method.info}</p>
+                      <p className="text-dark/70 sm:text-dark/80 text-sm sm:text-base break-words">
+                        {method.info}
+                      </p>
                     </div>
                   </div>
                 ))}
@@ -104,12 +108,12 @@ export default function Contact() {
             </div>
 
             {/* Right side - Form */}
-            <div className="bg-white/95 backdrop-blur-sm rounded-3xl p-8 shadow-2xl border border-white/30 relative overflow-hidden">
-              <div className="space-y-6 relative z-10">
+            <div className="bg-white/95 backdrop-blur-sm rounded-2xl sm:rounded-3xl p-6 sm:p-8 shadow-2xl border border-white/30 relative overflow-hidden">
+              <div className="space-y-5 sm:space-y-6 relative z-10">
                 <div className="space-y-2">
                   <label
                     htmlFor="subject"
-                    className="block text-sm font-bold text-gray-700 uppercase tracking-wide"
+                    className="block text-xs sm:text-sm font-bold text-gray-700 uppercase tracking-wide"
                   >
                     {t("contact.form.subject.label")}
                   </label>
@@ -122,7 +126,7 @@ export default function Contact() {
                     onChange={handleInputChange}
                     required
                     placeholder={t("contact.form.subject.placeholder")}
-                    className="w-full px-5 py-4 border-2 border-gray-200 rounded-2xl outline-none transition-all duration-300"
+                    className="w-full px-4 sm:px-5 py-3 sm:py-4 border-2 border-gray-200 rounded-xl sm:rounded-2xl outline-none transition-all duration-300 text-sm sm:text-base"
                     style={{
                       borderColor: "#e5e7eb",
                     }}
@@ -141,7 +145,7 @@ export default function Contact() {
                 <div className="space-y-2">
                   <label
                     htmlFor="message"
-                    className="block text-sm font-bold text-gray-700 uppercase tracking-wide"
+                    className="block text-xs sm:text-sm font-bold text-gray-700 uppercase tracking-wide"
                   >
                     {t("contact.form.message.label")}
                   </label>
@@ -154,7 +158,7 @@ export default function Contact() {
                     onChange={handleInputChange}
                     required
                     placeholder={t("contact.form.message.placeholder")}
-                    className="w-full px-5 py-4 border-2 border-gray-200 rounded-2xl outline-none transition-all duration-300 resize-none"
+                    className="w-full px-4 sm:px-5 py-3 sm:py-4 border-2 border-gray-200 rounded-xl sm:rounded-2xl outline-none transition-all duration-300 resize-none text-sm sm:text-base"
                     style={{
                       borderColor: "#e5e7eb"
                     }}
@@ -175,13 +179,34 @@ export default function Contact() {
                   aria-label="contact"
                   onClick={handleSubmit}
                   disabled={isSubmitting}
-                  className="w-full font-bold py-5 px-8 rounded-2xl text-white"
+                  className="w-full font-bold py-4 sm:py-5 px-6 sm:px-8 rounded-xl sm:rounded-2xl text-white text-sm sm:text-base transition-all duration-300 hover:opacity-90 active:scale-95"
                   style={{
                     background: "linear-gradient(to right, #159FD8, #28A9DF)",
                   }}
                 >
-                  {t("contact.form.submit")}
+                  {isSubmitting ? (
+                    <span className="flex items-center justify-center gap-2">
+                      <svg className="animate-spin h-5 w-5 text-white" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24">
+                        <circle className="opacity-25" cx="12" cy="12" r="10" stroke="currentColor" strokeWidth="4"></circle>
+                        <path className="opacity-75" fill="currentColor" d="M4 12a8 8 0 018-8V0C5.373 0 0 5.373 0 12h4zm2 5.291A7.962 7.962 0 014 12H0c0 3.042 1.135 5.824 3 7.938l3-2.647z"></path>
+                      </svg>
+                      {t("contact.form.sending") || "Envoi en cours..."}
+                    </span>
+                  ) : (
+                    t("contact.form.submit")
+                  )}
                 </button>
+
+                {submitStatus === "success" && (
+                  <div className="mt-4 p-3 bg-green-100 border border-green-400 text-green-700 rounded-lg text-center text-sm">
+                    {t("contact.form.success") || "Message envoyé avec succès!"}
+                  </div>
+                )}
+                {submitStatus === "error" && (
+                  <div className="mt-4 p-3 bg-red-100 border border-red-400 text-red-700 rounded-lg text-center text-sm">
+                    {t("contact.form.error") || "Une erreur est survenue"}
+                  </div>
+                )}
               </div>
             </div>
           </div>
