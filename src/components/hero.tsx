@@ -49,7 +49,7 @@ function DownloadButtons() {
   `;
 
   const handleGooglePlayClick = () => {
-    window.location.href ='https://github.com/RAKDEZ-DZ/SWAMP-WEB/releases/latest/download/base.apk';
+    window.location.href = 'https://github.com/RAKDEZ-DZ/SWAMP-WEB/releases/download/v1.0.0/base.apk';
   };
 
   return (
